@@ -6,11 +6,14 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 13:17:00 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/09 17:09:10 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/09 17:16:39 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Account.hpp"
+#include <iostream>
+#include <string>
+#include <ctime>
 
 int Account::_nbAccounts = 0;
 int Account::_totalAmount = 0;
