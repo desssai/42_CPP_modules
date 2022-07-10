@@ -6,7 +6,7 @@ GCC			=	c++
 
 FLAGS		=	-Wall -Werror -Wextra -std=c++98
 
-NAME		=	zombie_test
+NAME		=	sed_for_losers
 
 RM			= 	rm -f
 

@@ -6,7 +6,7 @@ GCC			=	c++
 
 FLAGS		=	-Wall -Werror -Wextra -std=c++98
 
-NAME		=	zombie_test
+NAME		=	automated_harl
 
 RM			= 	rm -f
 

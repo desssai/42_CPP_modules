@@ -6,14 +6,18 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 17:44:20 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/09 18:16:20 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/10 15:00:28 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name) : _name(name) {
+Zombie::Zombie(void) {
 	return ;
+}
+
+void Zombie::setname(std::string name) {
+	this->_name = name;
 }
 
 void Zombie::announce(void) {
