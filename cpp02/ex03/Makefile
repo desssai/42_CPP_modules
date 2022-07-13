@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/13 15:37:19 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:37:20 by ncarob           ###   ########.fr        #
+#    Created: 2022/07/13 15:36:15 by ncarob            #+#    #+#              #
+#    Updated: 2022/07/13 15:36:16 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ GCC			=	c++
 
 FLAGS		=	-Wall -Werror -Wextra -std=c++98
 
-NAME		=	sed_for_losers
+NAME		=	myFixed
 
 RM			= 	rm -f
 

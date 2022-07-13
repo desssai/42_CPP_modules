@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:29:56 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/12 22:13:47 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/13 16:10:15 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FIXED_H
 
 # include <iostream>
-# include <string>
 
 class Fixed {
 

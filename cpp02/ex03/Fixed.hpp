@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:29:56 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/13 16:10:10 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/13 16:11:49 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ public:
 	float	toFloat(void) const;
 	int		toInt(void) const;
 
-	static Fixed& min(Fixed & a, Fixed & b);
-	static Fixed& max(Fixed & a, Fixed & b);
-	static Fixed const & min(Fixed const & a, Fixed const & b);
-	static Fixed const & max(Fixed const & a, Fixed const & b);
+	static Fixed &	min(Fixed & a, Fixed & b);
+	static Fixed &	max(Fixed & a, Fixed & b);
+	static Fixed const &	min(Fixed const & a, Fixed const & b);
+	static Fixed const &	max(Fixed const & a, Fixed const & b);
 
 	Fixed(void);
 	Fixed(const int num);
@@ -36,7 +36,7 @@ public:
 	Fixed(Fixed const & other);
 	~Fixed(void);
 
-	Fixed&	operator =	(Fixed const & other);
+	Fixed &	operator =	(Fixed const & other);
 	bool	operator <	(Fixed const & other) const;
 	bool	operator <=	(Fixed const & other) const;
 	bool	operator >	(Fixed const & other) const;
@@ -61,6 +61,6 @@ private:
 
 };
 
-std::ostream& operator<<(std::ostream & o, Fixed const & fx);
+std::ostream & operator<<(std::ostream & o, Fixed const & fx);
 
 #endif
