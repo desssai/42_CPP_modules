@@ -6,7 +6,7 @@
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/13 15:37:44 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:37:45 by ncarob           ###   ########.fr        #
+#    Updated: 2022/07/14 15:50:05 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,11 +24,11 @@ NAME		=	phonebook
 
 RM			= 	rm -f
 
-%.o:	%.c $(INCLUDES)
-		$(GCC) $(FLAGS) -c $< -o $@ 
+%.o:	%.cpp $(wildcard ./*.hpp)
+		$(GCC) $(FLAGS) -I$(INCLUDES) -c $< -o $@ 
 
-$(NAME):	$(OBJS)
-			$(GCC) $(FLAGS) $(OBJS) -I$(INCLUDES) -o $(NAME)
+$(NAME):	$(OBJS) $(wildcard ./*.hpp)
+			$(GCC) $(FLAGS) $(OBJS) -o $(NAME)
 
 all:	$(NAME)
 

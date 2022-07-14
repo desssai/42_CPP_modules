@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:31:33 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/13 15:38:09 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 20:49:39 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ Fixed	Fixed::operator ++ (void) {
 	return (res);
 }
 
-Fixed	Fixed::operator ++ (int num) {
+Fixed	Fixed::operator ++ (int) {
 	Fixed res;
 	
 	res.setRawBits(this->_int++);
@@ -127,7 +127,7 @@ Fixed	Fixed::operator -- (void) {
 	return (res);
 }
 
-Fixed	Fixed::operator -- (int num) {
+Fixed	Fixed::operator -- (int) {
 	Fixed res;
 	
 	res.setRawBits(this->_int--);

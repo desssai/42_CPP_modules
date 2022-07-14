@@ -6,14 +6,12 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:29:56 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/13 16:10:19 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 19:37:28 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_H
 # define FIXED_H
-
-# include <iostream>
 
 class Fixed {
 
@@ -35,4 +33,4 @@ private:
 
 };
 
-# endif
+#endif

@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 15:31:36 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/10 18:47:14 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 16:27:55 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class Weapon {
 
 public:
-	const std::string&	getType(void) const;
+	std::string const &	getType(void) const;
 	void				setType(std::string new_type);
 	
 	Weapon(std::string type);

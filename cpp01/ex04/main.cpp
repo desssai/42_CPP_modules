@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 19:16:42 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/11 01:59:52 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 18:28:54 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@ void replace(std::string const filename, std::string const before, std::string c
 	std::ifstream	input;
 	std::ofstream	output;
 	std::string		buffer;
-	unsigned int	i;
-	unsigned int	j;
+	std::size_t		pos, blen = before.length();
 
-
+	if (!blen) {
+		std::cout << "ERROR. BEFORE IS NULL." << std::endl;
+		return ;
+	}
 	input.open(filename, std::ifstream::in);
 	if (!input) {
 		std::cout << "ERROR OPENING INPUT FILE." << std::endl;
@@ -33,23 +35,18 @@ void replace(std::string const filename, std::string const before, std::string c
 		return ;
 	}
 	while (std::getline(input, buffer)) {
-		i = -1;
-		while (buffer[++i]) {
-			if (buffer[i] != before[0])
-				output << buffer[i];
-			else {
-				j = 0;
-				while (buffer[i + j] && before[j] && buffer[i + j] == before[j])
-					j++;
-				if (j == before.length()) {
-					i += j - 1;
-					output << after;
-				}
-				else
-					output << buffer[i];
-			}
+		if (!input && !input.eof())
+			break ;
+		pos = buffer.find(before, 0);
+		while (pos != std::string::npos) {
+			buffer.erase(pos, blen);
+			buffer.insert(pos, after);
+			pos += after.length();
+			pos = buffer.find(before, pos);
 		}
-		output << std::endl;
+		output << buffer;
+		if (!input.eof())
+			output << std::endl;
 	}
 	input.close();
 	output.close();
@@ -58,5 +55,7 @@ void replace(std::string const filename, std::string const before, std::string c
 int main(int argc, char** argv) {
 	if (argc == 4) 
 		replace (argv[1], argv[2], argv[3]);
+	else
+		std::cout << "ERROR. WRONG ARGS." << std::endl;
 	return (0);
 }

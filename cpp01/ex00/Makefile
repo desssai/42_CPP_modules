@@ -6,13 +6,15 @@
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/13 15:36:44 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:36:57 by ncarob           ###   ########.fr        #
+#    Updated: 2022/07/14 16:14:45 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		=	$(wildcard ./*.cpp)
 
 OBJS		=	$(SRCS:.cpp=.o)
+
+INCLUDES	=	./
 
 GCC			=	c++
 
@@ -22,8 +24,8 @@ NAME		=	zombie_test
 
 RM			= 	rm -f
 
-%.o:	%.c
-		$(GCC) $(FLAGS) -c $< -o $@ 
+%.o:	%.cpp $(wildcard ./*.hpp)
+		$(GCC) $(FLAGS) -I$(INCLUDES) -c $< -o $@ 
 
 $(NAME):	$(OBJS)
 			$(GCC) $(FLAGS) $(OBJS) -o $(NAME)

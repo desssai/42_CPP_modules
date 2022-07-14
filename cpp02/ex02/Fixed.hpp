@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:29:56 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/13 16:10:10 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 20:44:39 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ public:
 	Fixed	operator /	(Fixed const & other) const;
 
 	Fixed	operator ++	(void);
-	Fixed	operator ++	(int num);
+	Fixed	operator ++	(int);
 	Fixed	operator --	(void);
-	Fixed	operator --	(int num);
+	Fixed	operator --	(int);
 
 private:
 

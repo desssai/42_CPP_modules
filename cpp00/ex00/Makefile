@@ -5,14 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/13 15:37:42 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:37:42 by ncarob           ###   ########.fr        #
+#    Created: 2022/07/13 15:37:44 by ncarob            #+#    #+#              #
+#    Updated: 2022/07/14 16:00:35 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		=	$(wildcard ./*.cpp)
 
 OBJS		=	$(SRCS:.cpp=.o)
+
+INCLUDES	= 	./
 
 GCC			=	c++
 
@@ -22,10 +24,10 @@ NAME		=	megaphone
 
 RM			= 	rm -f
 
-%.o:	%.c
-		$(GCC) $(FLAGS) -c $< -o $@ 
+%.o:	%.cpp $(wildcard ./*.hpp)
+		$(GCC) $(FLAGS) -I$(INCLUDES) -c $< -o $@ 
 
-$(NAME):	$(OBJS)
+$(NAME):	$(OBJS) $(wildcard ./*.hpp)
 			$(GCC) $(FLAGS) $(OBJS) -o $(NAME)
 
 all:	$(NAME)

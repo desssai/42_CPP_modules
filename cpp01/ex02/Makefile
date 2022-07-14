@@ -6,7 +6,7 @@
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/13 15:36:51 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:36:58 by ncarob           ###   ########.fr        #
+#    Updated: 2022/07/14 17:59:39 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ NAME		=	hi_this_is_brain
 
 RM			= 	rm -f
 
-%.o:	%.c
+%.o:	%.cpp
 		$(GCC) $(FLAGS) -c $< -o $@ 
 
 $(NAME):	$(OBJS)

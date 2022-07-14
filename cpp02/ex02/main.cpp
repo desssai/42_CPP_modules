@@ -6,7 +6,7 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 20:34:51 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/13 15:17:24 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 20:44:36 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <cmath>
 
 int main(int argc, char **argv) {
+	(void)argv;
 	if (argc == 1)
 	{
 		Fixed a;

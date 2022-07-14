@@ -6,13 +6,13 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 13:28:56 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/09 14:05:31 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 15:51:37 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook(void) : _number(0), _index(0) {
+PhoneBook::PhoneBook(void) : _index(0), _number(0) {
 	this->ft_const_loop();
 }
 

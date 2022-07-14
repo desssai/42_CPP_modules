@@ -6,16 +6,16 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 12:24:51 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/08 19:10:35 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 15:49:18 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <cstring>
+#include <string>
 
 void ft_striter(char **argv, int argc) {
 	for (int i = 1; i <= argc; i++) {
-		for (int j = 0; j < std::strlen(argv[i]); j++) {
+		for (unsigned int j = 0; j < std::strlen(argv[i]); j++) {
 			std::cout << (char)std::toupper(argv[i][j]);
 		}
 	}

@@ -6,11 +6,12 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:31:33 by ncarob            #+#    #+#             */
-/*   Updated: 2022/07/12 21:14:58 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/07/14 19:37:04 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+#include <iostream>
 
 const int Fixed::_bits = 8;
 

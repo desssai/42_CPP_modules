@@ -6,7 +6,7 @@
 #    By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/13 15:37:49 by ncarob            #+#    #+#              #
-#    Updated: 2022/07/13 15:37:50 by ncarob           ###   ########.fr        #
+#    Updated: 2022/07/14 16:01:07 by ncarob           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,15 @@ GCC			=	c++
 
 FLAGS		=	-Wall -Werror -Wextra -std=c++98
 
-NAME		=	working_account
+NAME		=	my_account
 
 RM			= 	rm -f
 
-%.o:	%.c $(INCLUDES)
-		$(GCC) $(FLAGS) -c $< -o $@ 
+%.o:	%.cpp $(wildcard ./*.hpp)
+		$(GCC) $(FLAGS) -I$(INCLUDES) -c $< -o $@ 
 
-$(NAME):	$(OBJS)
-			$(GCC) $(FLAGS) $(OBJS) -I$(INCLUDES) -o $(NAME)
+$(NAME):	$(OBJS) $(wildcard ./*.hpp)
+			$(GCC) $(FLAGS) $(OBJS) -o $(NAME)
 
 all:	$(NAME)
 
