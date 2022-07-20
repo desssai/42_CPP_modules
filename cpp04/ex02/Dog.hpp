@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/19 15:44:53 by ncarob            #+#    #+#             */
+/*   Updated: 2022/07/19 20:18:34 by ncarob           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef DOG_H
+# define DOG_H
+
+# include "AAnimal.hpp"
+# include "Brain.hpp"
+
+class Dog : public AAnimal {
+
+public:
+	virtual void	makeSound(void) const;
+	Brain*	getBrain(void) const;
+
+	Dog(void);
+	Dog(std::string const thought);
+	Dog(Dog const & origin);
+	virtual ~Dog(void);
+
+	Dog & operator = (Dog const & origin);
+
+private:
+	Brain* _brain;
+
+};
+
+#endif
