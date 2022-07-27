@@ -89,7 +89,6 @@ void convert(std::string const &str) {
 }
 
 int main(int const argc, char** const argv) {
-	if (argc == 2)
-		convert(static_cast<std::string>(argv[1]));
+	(argc == 2) ? convert(static_cast<std::string>(argv[1])) : (void)(std::cout << "Error: no input." << std::endl);
 	return (0);
 }
