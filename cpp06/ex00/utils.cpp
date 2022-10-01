@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <string>
+#include <limits.h>
 
 void printFloat(std::string const &str) {
 	float num = std::stof(str);
@@ -44,7 +45,7 @@ void printDouble(std::string const &str) {
 	else
 		std::cout << "INT: " << static_cast<int>(num) << std::endl;
 	std::cout << "DOUBLE: " << num << std::endl;
-	if ((num < __FLT_MIN__ || num > __FLT_MAX__) && str.find("inf") == std::string::npos)
+	if ((num < -340282346638528859811704183484516925440.0000000000000000f || num > 340282346638528859811704183484516925440.0000000000000000f) && str.find("inf") == std::string::npos)
 		std::cout << "FLOAT: Impossible" << std::endl;
 	else
 		std::cout << "FLOAT: " << static_cast<float>(num) << "f" << std::endl;
