@@ -4,7 +4,9 @@
 
 The aim of this project is to imporve skills in Object-Orineted programming.
 This project consists of several modules. Each module is based on its own subject. 
-Each module has several exercises. Everything is written in accordance with the 
+Each module has several exercises. 
+
+Everything is written in accordance with the 
 C++98 standard. From module 02 every class is implemented in the Orthodox Canonical Form.
 
 ### Description
