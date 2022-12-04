@@ -11,12 +11,12 @@ C++98 standard. From module 02 every class is implemented in the Orthodox Canoni
 
 | Module | Subjects |
 | ------ | -------- |
-| Module 00 | Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff. |
-| Module 01 | Memory allocation, pointers to members, references, switch statements. |
-| Module 02 | Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form. |
-| Module 03 | Inheritance. |
-| Module 04 | Subtype polymorphism, abstract classes and interfaces. |
-| Module 05 | Repetition and Exceptions. |
-| Module 06 | Explicit and implicit conversion, static_cast, const_cast, reinterpret_cast. |
-| Module 07 | C++ templates. |
-| Module 08 | Templated containers, iterators, algorithms. |
+| 00 | Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff. |
+| 01 | Memory allocation, pointers to members, references, switch statements. |
+| 02 | Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form. |
+| 03 | Inheritance. |
+| 04 | Subtype polymorphism, abstract classes and interfaces. |
+| 05 | Repetition and Exceptions. |
+| 06 | Explicit and implicit conversion, static_cast, const_cast, reinterpret_cast. |
+| 07 | C++ templates. |
+| 08 | Templated containers, iterators, algorithms. |
